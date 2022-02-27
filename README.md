@@ -5,3 +5,12 @@ Características del computador: Nombre del dispositivo: DESKTOP-MMLJSRU procesa
 
 Librerias utilizadas
 tidyverse y dplyr
+
+Data utilizada
+DNasa : ensayo Elisa de DNasa, datos obtenidos durante el desarrollo de un ensayo ELISA.
+
+Formato
+contiene columnas: 
+run: un factor ordenado por niveles que indican la ejecución del ensayo.
+conc: muestra la concentración conocida de la proteína.
+densidad: muestra la densidad óptica medida en el ensayo
