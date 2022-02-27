@@ -300,18 +300,52 @@ Origen&lt;-(sample(RegionOrigen,12,replace = TRUE))
 est&lt;-data.frame(Nombres,edad,Altura,genero,Origen)
 print(est)</code></pre>
 <pre><code>##      Nombres edad Altura    genero    Origen
-## 1    Arnoldd   22    169 Masculino  Amazonia
-## 2    Rodrigo   23    165 Masculino     Costa
-## 3   Anabella   23    167  Femenino     Costa
-## 4   Victoria   18    187  Femenino  Amazonia
-## 5    Aurelio   22    172 Masculino  Amazonia
-## 6    Antonio   23    188 Masculino    Sierra
-## 7      Ruben   20    171 Masculino  Amazonia
-## 8       Juan   24    180 Masculino  Amazonia
-## 9  Margarita   24    189  Femenino Galapagos
-## 10    Daniel   22    188 Masculino    Sierra
-## 11   Abigail   23    188  Femenino  Amazonia
-## 12     Mario   19    165 Masculino Galapagos</code></pre>
+## 1    Arnoldd   19    170 Masculino  Amazonia
+## 2    Rodrigo   20    167 Masculino    Sierra
+## 3   Anabella   18    184  Femenino     Costa
+## 4   Victoria   21    177  Femenino    Sierra
+## 5    Aurelio   18    176 Masculino     Costa
+## 6    Antonio   18    169 Masculino  Amazonia
+## 7      Ruben   24    190 Masculino  Amazonia
+## 8       Juan   24    167 Masculino  Amazonia
+## 9  Margarita   18    184  Femenino Galapagos
+## 10    Daniel   22    172 Masculino     Costa
+## 11   Abigail   18    190  Femenino  Amazonia
+## 12     Mario   21    186 Masculino  Amazonia</code></pre>
+</div>
+<div id="ejercicio-4.-cargue-el-dataset-dnase-e-identifique-su-estructura.-extraiga-subset-los-datos-que-cumplan-las-condiciones-de" class="section level4">
+<h4>Ejercicio 4. Cargue el dataset “Dnase” e identifique su estructura. Extraiga (subset) los datos que cumplan las condiciones de:</h4>
+</div>
+<div id="concconcentración-entre-0.1-y-0.2" class="section level4">
+<h4>“conc”(concentración) entre 0.1 y 0.2</h4>
+<pre class="r"><code>colnames(DNase)</code></pre>
+<pre><code>## [1] &quot;Run&quot;     &quot;conc&quot;    &quot;density&quot;</code></pre>
+<pre class="r"><code>DNase1&lt;-subset(DNase, conc &gt;= 0.1 &amp; conc &lt;= 0.2)
+tableDNase1&lt;-data.frame(DNase1)
+print(tableDNase1)</code></pre>
+<pre><code>##     Run      conc density
+## 3     1 0.1953125   0.121
+## 4     1 0.1953125   0.124
+## 19    2 0.1953125   0.137
+## 20    2 0.1953125   0.123
+## 35    3 0.1953125   0.173
+## 36    3 0.1953125   0.165
+## 51    4 0.1953125   0.118
+## 52    4 0.1953125   0.108
+## 67    5 0.1953125   0.132
+## 68    5 0.1953125   0.135
+## 83    6 0.1953125   0.191
+## 84    6 0.1953125   0.189
+## 99    7 0.1953125   0.182
+## 100   7 0.1953125   0.182
+## 115   8 0.1953125   0.152
+## 116   8 0.1953125   0.148
+## 131   9 0.1953125   0.142
+## 132   9 0.1953125   0.155
+## 147  10 0.1953125   0.164
+## 148  10 0.1953125   0.166
+## 163  11 0.1953125   0.159
+## 164  11 0.1953125   0.155</code></pre>
 </div>
 
 
